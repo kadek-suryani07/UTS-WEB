@@ -1,0 +1,141 @@
+/* Atur body untuk tata letak halaman yang tengah */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #fce4ec; /* Warna latar belakang */
+  font-family: "Arial", sans-serif;
+  color: #000000; /* Warna teks */
+  margin: 0;
+  padding: 20px;
+}
+
+/* Mengatur kontainer utama */
+.container {
+  background-color: #f8bbd0; /* Warna kontainer */
+  width: 90%;
+  max-width: 1200px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Bagian profil di tengah */
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px; /* Spasi di bawah profil */
+}
+
+.profile-header .avatar img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ec407a; /* Warna border gambar */
+  transition: transform 0.3s;
+}
+
+.profile-header .avatar img:hover {
+  transform: scale(1.05);
+}
+
+.profile-header h1 {
+  font-size: 2em;
+  color: #ec407a; /* Warna nama */
+  margin-top: 15px;
+}
+
+/* Bagian Konten */
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Bagian Kontak */
+.contact-section {
+  background-color: #f06292; /* Warna latar belakang kontak */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px; /* Spasi di bawah bagian kontak */
+}
+
+.contact-section h2 {
+  color: #ffffff; /* Warna teks untuk judul kontak */
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around; /* Mengatur item untuk berjajar */
+  align-items: center; /* Menjaga semua item sejajar secara vertikal */
+  font-size: 1.1em;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #ffffff; /* Warna teks link */
+  text-align: center; /* Agar teks berada di tengah */
+  transition: background-color 0.3s;
+}
+
+.contact a:hover {
+  background-color: #ec407a; /* Warna latar belakang saat hover */
+  color: #ffffff; /* Warna teks saat hover */
+}
+
+.contact i {
+  font-size: 2em; /* Ukuran ikon */
+  display: block; /* Menjadikan ikon dalam satu blok */
+  margin-bottom: 5px; /* Spasi di bawah ikon */
+}
+
+/* Profile Content */
+.profile-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Sub-bagian di dalam content */
+.about-me,
+.experience {
+  background-color: #f48fb1; /* Warna latar belakang untuk about me dan experience */
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%; /* Memastikan bagian mengambil lebar penuh */
+}
+
+.about-me h2,
+.experience h2 {
+  color: #ffffff; /* Warna judul */
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.des {
+  font-size: 1em;
+  line-height: 1.6;
+  padding: 15px;
+  border: 2px solid #ec407a; /* Warna border */
+  border-radius: 10px;
+  font-style: italic;
+  background-color: #fce4ec; /* Warna latar belakang deskripsi */
+  transition: background-color 0.3s;
+}
+
+.des:hover {
+  background-color: #f8bbd0; /* Warna saat hover */
+}
+
+/* Gaya untuk pengalaman */
+.item h3,
+.item h4 {
+  font-size: 1.2em;
+  color: #ffffff; /* Warna teks judul item */
+  margin: 15px 0 5px;
+  font-weight: bold;
+}
